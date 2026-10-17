@@ -201,7 +201,6 @@ function Invitation() {
             onClick={openDoors}
             aria-label="Open the invitation"
             className="seal-btn absolute left-1/2 top-1/2 grid h-32 w-32 -translate-x-1/2 -translate-y-1/2 place-items-center sm:h-40 sm:w-40"
-            style={{ translate: "-50% -50%", transform: undefined }}
           >
             <img src={seal} alt="" width={816} height={816} className="absolute inset-0 h-full w-full" />
             <span className="relative font-display text-2xl font-semibold italic gold-text sm:text-3xl">A&nbsp;&amp;&nbsp;A</span>
