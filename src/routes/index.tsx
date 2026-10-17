@@ -190,8 +190,12 @@ function Invitation() {
       {/* Opening */}
       {!gone && (
         <div className={`stage fixed inset-0 z-50 overflow-hidden bg-foreground ${open ? "opened" : ""}`}>
-          <div className="door door-l" style={{ backgroundImage: `url(${sealed})` }} />
-          <div className="door door-r" style={{ backgroundImage: `url(${sealed})` }} />
+          <div className="door door-l overflow-hidden">
+            <img src={sealed} alt="" width={1536} height={1024} className="absolute left-0 top-0 h-full w-[200%] max-w-none object-cover" />
+          </div>
+          <div className="door door-r overflow-hidden">
+            <img src={sealed} alt="" width={1536} height={1024} className="absolute right-0 top-0 h-full w-[200%] max-w-none object-cover" />
+          </div>
           <div className="absolute inset-x-0 bottom-10 text-center">
             <p className={`eyebrow rise text-highlight transition-opacity ${open ? "opacity-0" : ""}`} style={{ color: "var(--paper-light)", animationDelay: ".6s" }}>
               Tap the seal to open
